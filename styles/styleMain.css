@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(268, 75%, 9%);
+  font-family: "League Spartan", sans-serif;
+  color: hsl(52, 100%, 62%);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  list-style: none;
+  cursor: pointer;
+}
+main {
+  height: 85vh;
+  min-width: 30vw;
+  margin: 5% 0;
+  display: flex;
+  flex-direction: column;
+}
+.S1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 7vh;
+  margin-bottom: 3vh;
+}
+.S1 p {
+  margin-top: 6px;
+  font-size: 12px;
+  word-spacing: 10px;
+  text-align: right;
+  padding-right: 10px;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+.theme-bar {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100px;
+}
+.theme-bar h5 {
+  padding-top: 8px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.themes {
+  display: flex;
+  border-radius: 15px;
+  background-color: hsl(268, 78%, 18%);
+}
+svg {
+  height: 20px;
+  width: 20px;
+}
+svg circle {
+  cursor: pointer;
+}
+#theme1 {
+  fill: transparent;
+}
+
+#theme2 {
+  fill: transparent;
+}
+#theme3 {
+  fill: hsl(176, 100%, 44%);
+}
+
+/**/
+#display {
+  height: 15vh;
+  font-size: 32px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 5vh;
+  background-color: hsl(268, 71%, 12%);
+  border-radius: 8px;
+}
+.S3 {
+  border-radius: 8px;
+  height: 60vh;
+  background-color: hsl(268, 71%, 12%);
+  font-weight: bold;
+}
+.S3 div {
+  padding: 15px 15px;
+  font-size: 30px;
+}
+.S3 div ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 10vh;
+  align-items: center;
+}
+.S3 div ul li {
+  height: 40px;
+  width: 70px;
+  background-color: hsl(268, 47%, 21%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px hsl(285, 91%, 52%);
+  border-radius: 6px;
+}
+#bar5 li {
+  width: 160px;
+  justify-content: space-around;
+}
+#reset,
+#delete{
+  font-size: 19px;
+  color: white;
+}
+#equals {
+  background-color: hsl(176, 100%, 44%);
+  color: black;
+  font-weight: 300;
+}
+
+/**/

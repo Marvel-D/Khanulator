@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles/styleMain.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://unpkg.com/mathjs/lib/browser/math.js"></script>
+  
+  <title>Don Khan | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+  <main>
+    <section class="S1">
+      <p>1 2 3</p>
+      <div class="head">
+        <h2>calc</h2>
+
+        <div class="theme-bar">
+          <h5>theme</h5>
+
+          <div class="themes">
+            <svg>
+              <circle cx="10" cy="10" r="5" id="theme1" onclick="change2Theme1()">
+            </svg>
+            <svg>
+              <circle cx="10" cy="10" r="5" id="theme2" onclick="change2Theme2()">
+            </svg>
+            <svg>
+              <circle cx="10" cy="10" r="5" id="theme3" onclick="change2Theme3">
+            </svg>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="display" class="buttons"></section>
+
+    <section class="S3">
+      <div class="buttons">
+        <ul class="bar1">
+          <li class="button" value="7">7</li>
+          <li class="button" value="8">8</li>
+          <li class="button" value="9">9</li>
+          <li class="button" id="delete" value="dele">Del</li>
+        </ul>
+
+        <ul class="bar2">
+          <li class="button" value="4">4</li>
+          <li class="button" value="5">5</li>
+          <li class="button" value="6">6</li>
+          <li class="button" value="+">+</li>
+        </ul>
+
+        <ul class="bar3">
+          <li class="button" value="1">1</li>
+          <li class="button" value="2">2</li>
+          <li class="button" value="3">3</li>
+          <li class="button" value="-">-</li>
+        </ul>
+
+        <ul class="bar4">
+          <li class="button" value=".">.</li>
+          <li class="button" value="0">0</li>
+          <li class="button" value="/">/</li>
+          <li class="button" value="*">*</li>
+        </ul>
+
+        <ul id="bar5">
+          <li class="button" id="reset" value="clear">RESET</li>
+          <li class="button" id="equals" value="=">=</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+</body>
+<script src="scripts/theme-functions.js"></script>
+<script src="scripts/math-functions.js"></script>
+
+</html>
